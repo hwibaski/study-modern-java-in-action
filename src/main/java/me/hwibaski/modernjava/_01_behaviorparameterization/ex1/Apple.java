@@ -1,10 +1,10 @@
-package me.hwibaski.modernjava._01_behaviorparameterization;
+package me.hwibaski.modernjava._01_behaviorparameterization.ex1;
 
-public class Banana {
+public class Apple {
     private final Color color;
     private final int weight;
 
-    public Banana(Color color, int weight) {
+    public Apple(Color color, int weight) {
         this.color = color;
         this.weight = weight;
     }
