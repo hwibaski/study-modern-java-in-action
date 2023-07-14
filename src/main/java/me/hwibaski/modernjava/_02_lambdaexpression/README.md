@@ -5,7 +5,7 @@
 - 람다 표현식은 익명 클래스처럼 이름이 없는 함수이면서 메서드를 인수로 전달할 수 있으므로 일단은 람다 표현식이 익명 클래스와 비슷하다고 생각하자
 - 메서드로 전달할 수 있는 익명 함수를 단순화한 것
 
-```text
+```java
 (Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight())
 (람다 파라미터) -> 람다 바디 
 ```
@@ -50,7 +50,7 @@
 
 ## 특별한 보이드 호환 규칙
 
-```text
+```java
  Predicate<String> p = s -> listOfString.add("abc");
  
  Consumer<String> b = s -> listOfString.add("abc");
@@ -63,7 +63,7 @@
 
 ## 형식 추론
 
-```text
+```java
 // 같은 코드, 형식을 추론하기 때문에 String 타입 명시 제외 가능
  forEach(listOfString, (String s) -> System.out.println(s));
  forEach(listOfString, s -> System.out.println(s));
@@ -73,7 +73,7 @@
 
 - 람다 표현식에서는 익명 함수가 하는 것처럼 자유 변수(람다의 파라미터로 넘겨진 변수가 아닌 외부에서 정의된 변수)를 활용할 수 있다. 이와 같은 동작을 람다 캡쳐링이라고 한다.
 
-```text
+```java
 int portNumber = 8080;  // <- 자유 변수
 Runnable r = () -> System.out.println(portNumber);
 ```
@@ -102,7 +102,7 @@ Runnable r = () -> System.out.println(portNumber);
 3. 기존 객체의 인스턴스 메서드 참조
     - expensiveTrasaction.getValue() : expensiveTransaction::getValue
 
-```text
+```java
 (String s) -> s.toUpperCase()
 String::toUpperCase
 ```
@@ -113,7 +113,7 @@ String::toUpperCase
 
 ## 생성자 참조
 
-```text
+```java
 Supplier<Apple> a1 = Apple:new;
 
 new Apple(color, weight)
@@ -122,7 +122,7 @@ BiFunction<Color, Integer, Apple> a2 = Apple::new;
 // 파라미터가 세 개 이상인 생성자를 메서드 참조하려면 커스텀하게 함수형 인터페이스를 만들어서 사용해야 메서드 참조 사용 가능하다.
 ```
 
-```text
+```java
 public interface TriFunction<T, U, V, R> {
     R apply(T t, U u, V v);
 }
