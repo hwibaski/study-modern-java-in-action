@@ -106,6 +106,8 @@ Runnable r = () -> System.out.println(portNumber);
 (String s) -> s.toUpperCase()
 String::toUpperCase
 ```
+![image](https://github.com/hwibaski/study-modern-java-in-action/assets/85930725/c634a1c2-5e9b-49fb-b694-9ed17808e6c8)
+
 
 - 출처 : https://dev-kani.tistory.com/38
 
