@@ -9,3 +9,4 @@
 3. [람다 표현식](https://github.com/hwibaski/study-modern-java-in-action/tree/main/src/main/java/me/hwibaski/modernjava/_02_lambdaexpression)
 4. [스트림 소개](https://github.com/hwibaski/study-modern-java-in-action/tree/main/src/main/java/me/hwibaski/modernjava/_03_stream_intro)
 5. [스트림 활용](https://github.com/hwibaski/study-modern-java-in-action/tree/main/src/main/java/me/hwibaski/modernjava/_04_stream_working)
+6. [스트림으로 데이터 수집](https://github.com/hwibaski/study-modern-java-in-action/tree/main/src/main/java/me/hwibaski/modernjava/_05_stream_collect)
